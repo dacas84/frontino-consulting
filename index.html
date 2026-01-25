@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Frontino Consulting | High-End Tech Infrastructure</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
+        .border-subtle { border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 border-b border-white/10 glass">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg">
+<svg class="text-white w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold tracking-tight">Frontino Consulting</h1>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#methodology">How We Work</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#engagement">Engagement</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#why-us">Why Us</a>
+</nav>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all">
+                Book a Discovery Call
+            </button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-24 lg:py-32">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+<div class="flex flex-col gap-8 z-10">
+<div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1 rounded-full w-fit">
+<span class="text-primary text-xs font-bold tracking-wider uppercase">Future-Proof Engineering</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight">
+                        Building Business Infrastructure, <span class="text-primary">Not Just Software.</span>
+</h1>
+<p class="text-lg text-slate-400 max-w-xl leading-relaxed">
+                        Scalable technology solutions for forward-thinking enterprises. We bridge the technology gap through strategic engineering and AI-driven growth.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white h-14 px-8 rounded-lg font-bold text-lg hover:scale-[1.02] transition-transform">
+                            View Our Capabilities
+                        </button>
+<button class="bg-white/5 border border-white/10 text-white h-14 px-8 rounded-lg font-bold text-lg hover:bg-white/10 transition-all">
+                            Our Method
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="w-full aspect-square bg-cover bg-center rounded-2xl border-subtle shadow-2xl relative z-10" data-alt="Abstract 3D digital architecture representing interconnected systems" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAj0pa_lLghqqKAWw6yrm1A--3-vrxU3Ouk_qyuMSUM8rulxVN7RrhhAE7AGpukGX3-E-ZkTEj6gp0tvPVno8dpzyOPP-8NQGHQynAjkKKzyvVAUdxJQvA2gb0IxCOUL-g0OFoMK65ds2A0j9nnRgZmBGUJ5v-JIwTe-ShcSQc9hGhpmK3RXnWd9XJ9Vy6uGPMFzfNnv6O5NZz3Y1hv3GcFYWBj9iofJTY6IinRlYM09kRkaIxLxH-1wkVh5hMKBBppcsOQLl7PWPk');">
+</div>
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/20 rounded-full blur-[100px] -z-10"></div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-blue-600/10 rounded-full blur-[100px] -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Executive Summary Section -->
+<section class="py-20 bg-white/5">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-12">
+<h2 class="text-3xl font-bold mb-4">The Executive Summary</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="p-8 rounded-xl border-subtle glass flex flex-col gap-6">
+<div class="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-red-500">warning</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-3">The Challenge</h3>
+<p class="text-slate-400 leading-relaxed">Legacy tools and fragmented systems create a technology gap that stalls business growth. Most organizations suffer from 'tool fatigue'—having the software but lacking the integrated infrastructure to make it work at scale.</p>
+</div>
+</div>
+<div class="p-8 rounded-xl border-subtle glass flex flex-col gap-6">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-3">The Solution</h3>
+<p class="text-slate-400 leading-relaxed">We build integrated, future-proof infrastructure that aligns technology with business outcomes. Our approach treats technology as a foundational asset, ensuring your systems scale alongside your ambitions.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Services -->
+<section class="py-24" id="services">
+<div class="max-w-7xl mx-auto px-6 text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Core Services</h2>
+<p class="text-slate-400 max-w-2xl mx-auto">Strategic engineering tailored for enterprise-level demands and complex technical challenges.</p>
+</div>
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="group p-10 rounded-2xl border-subtle glass hover:border-primary/50 transition-all flex flex-col gap-6">
+    <span class="material-symbols-outlined text-5xl text-primary/60 group-hover:text-primary transition-colors">desktop_mac</span>
+    <h3 class="text-2xl font-bold">Web Development</h3>
+    <p class="text-slate-400">We help startups and growing businesses build modern websites that are fast, secure and designed to support marketing and growth from day one.</p>
+    <ul class="flex flex-col gap-3 mt-4 text-sm text-slate-300">
+    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Custom Websites and Web Applications</li>
+    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Setup Domain, Hosting and Secure Business Email</li>
+    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Performance, security and reliability best practices</li>
+    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Websites designed to attract, engage and conver users</li>
+    </ul>
+    </div>
+
+<!-- Service 2 -->
+ <div class="group p-10 rounded-2xl border-subtle glass hover:border-primary/50 transition-all flex flex-col gap-6"> 
+<span class="material-symbols-outlined text-5xl text-primary/60 group-hover:text-primary transition-colors">schema</span> 
+<h3 class="text-2xl font-bold">Process Automation</h3> 
+<p class="text-slate-400">We help teams reduce manual work and scale operations by automationg business processes with intelligent, data-driven solutions.</p> 
+<ul class="flex flex-col gap-3 mt-4 text-sm text-slate-300"> 
+    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Workflow automation and orchestration</li> 
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> AI-Powered process optimization and monitoring</li>  
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Integration with existing systems and tools</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Monitoring and continuous improvement</li>  
+</ul> </div>
+
+<!-- Service 3 -->
+<div class="group p-10 rounded-2xl border-subtle glass hover:border-primary/50 transition-all flex flex-col gap-6">
+<span class="material-symbols-outlined text-5xl text-primary/60 group-hover:text-primary transition-colors">cloud_queue</span>
+<h3 class="text-2xl font-bold">Cloud Systems</h3>
+<p class="text-slate-400">We design and build cloud systems that are scalable, secure and cost-efficient supporting long-term growth and operational stability</p>
+<ul class="flex flex-col gap-3 mt-4 text-sm text-slate-300">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Cloud Development on AWS and Azure</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Systems Modernization and Migration</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Custom Software Architecture and Platform Design</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> API Development and System Integration</li> 
+</ul>
+</div>
+</div>
+</section>
+<!-- How We Work (Methodology) -->
+<section class="py-24 bg-white/[0.02]" id="methodology">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">The Frontino Method</h2>
+<p class="text-slate-400">A structured delivery model designed for clarity, control and predictable outcomes.</p>
+</div>
+<div class="grid md:grid-cols-4 gap-4">
+<div class="flex flex-col items-center text-center p-6 border-r border-white/5 last:border-0">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6 text-primary font-bold text-xl">01</div>
+<h4 class="font-bold text-lg mb-2">Discovery</h4>
+<p class="text-sm text-slate-400">Understand your business goals, and existing technology to identify what really matters and what can be improved.</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 border-r border-white/5 last:border-0">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6 text-primary font-bold text-xl">02</div>
+<h4 class="font-bold text-lg mb-2">Architect</h4>
+<p class="text-sm text-slate-400">Design a practical technical plan that supports growth, scalability and long-term maintainability</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 border-r border-white/5 last:border-0">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6 text-primary font-bold text-xl">03</div>
+<h4 class="font-bold text-lg mb-2">Build</h4>
+<p class="text-sm text-slate-400">Implement solutions iteratively, delivering value early with clear milestones and visibility.</p>
+</div>
+<div class="flex flex-col items-center text-center p-6">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6 text-primary font-bold text-xl">04</div>
+<h4 class="font-bold text-lg mb-2">Optimize</h4>
+<p class="text-sm text-slate-400">Keep your systems healthy and ready to grow through monitoring and ongoing optimization.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Engagement Models -->
+<section class="py-24" id="engagement">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-4xl font-bold mb-4">How to Engage</h2>
+<p class="text-slate-400">Flexible models to fit your organization's specific needs.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="p-1 rounded-2xl bg-gradient-to-br from-primary to-blue-900">
+<div class="h-full bg-background-dark p-8 rounded-[14px]">
+<h3 class="text-2xl font-bold mb-4">Strategic Partnership</h3>
+<p class="text-slate-400 mb-8">Long-term retainer for continuous advisory, fractional leadership, and architectural oversight.</p>
+</div>
+</div>
+<div class="p-1 rounded-2xl bg-white/10">
+<div class="h-full bg-background-dark p-8 rounded-[14px]">
+<h3 class="text-2xl font-bold mb-4">Project-Based</h3>
+<p class="text-slate-400 mb-8">Defined scope for specific infrastructure builds, migrations, or technical audits.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us / Value Prop -->
+<section class="py-24 bg-primary" id="why-us">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl lg:text-5xl font-black text-white mb-8">Efficiency-First Mindset. Business-Aligned Engineering.</h2>
+<div class="grid sm:grid-cols-2 gap-6">
+<div class="bg-white/10 p-6 rounded-xl border border-white/20">
+<h4 class="text-white font-bold text-xl mb-2">99.9%</h4>
+<p class="text-white/70 text-sm">System reliability for our enterprise clients.</p>
+</div>
+<div class="bg-white/10 p-6 rounded-xl border border-white/20">
+<h4 class="text-white font-bold text-xl mb-2">40%</h4>
+<p class="text-white/70 text-sm">Average reduction in infrastructure overhead.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+<div class="shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<div>
+<h5 class="text-white font-bold mb-1">Security by Design</h5>
+<p class="text-white/60 text-sm">We don't bolt security on at the end; we bake it into every line of infrastructure code.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+<div class="shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">speed</span>
+</div>
+<div>
+<h5 class="text-white font-bold mb-1">Velocity &amp; Precision</h5>
+<p class="text-white/60 text-sm">Agile methodologies that don't sacrifice documentation or architectural integrity.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-4xl font-bold mb-6">Ready to Bridge the Technology Gap?</h2>
+<p class="text-xl text-slate-400 mb-10">Schedule a 30-minute discovery call to discuss your infrastructure goals and challenges.</p>
+<div class="p-8 glass border-subtle rounded-2xl">
+<form class="grid sm:grid-cols-3 gap-4">
+<input class="bg-white/5 border-white/10 rounded-lg text-white focus:ring-primary focus:border-primary px-4 h-12" placeholder="Your Name" type="text"/>
+<input class="bg-white/5 border-white/10 rounded-lg text-white focus:ring-primary focus:border-primary px-4 h-12" placeholder="Business Email" type="email"/>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold rounded-lg h-12 transition-all">Book Call</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-white/10 py-12">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary/20 flex items-center justify-center rounded">
+<svg class="text-primary w-5 h-5" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<p class="text-sm font-bold tracking-tight">Frontino Consulting LLC</p>
+</div>
+<div class="flex gap-8 text-sm text-slate-500">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">LinkedIn</a>
+</div>
+<p class="text-xs text-slate-600">© 2024 Frontino Consulting. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
