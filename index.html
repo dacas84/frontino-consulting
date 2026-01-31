@@ -289,7 +289,7 @@
 <div class="p-8 glass border-subtle rounded-2xl">
 <form action="https://formsubmit.co/frontino.investments.llc@gmail.com" method="POST" class="grid sm:grid-cols-3 gap-4">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="http://localhost:5173/#success">
+  <input type="hidden" name="_next" id="redirectUrl" value="">
   <input type="hidden" name="_template" value="table">
   <input class="bg-white/5 border-white/10 rounded-lg text-white focus:ring-primary focus:border-primary px-4 h-12" placeholder="Your Name" type="text" name="name" required />
   <input class="bg-white/5 border-white/10 rounded-lg text-white focus:ring-primary focus:border-primary px-4 h-12" placeholder="Business Email" type="email" name="email" required />
@@ -319,6 +319,8 @@
 <script>
     // Check if URL contains success parameter
     window.addEventListener('DOMContentLoaded', function() {
+      const baseUrl = window.location.origin; // Gets current domain automatically
+      document.getElementById('redirectUrl').value = baseUrl + '/#success';
       if (window.location.hash === '#success') {
         document.getElementById('successModal').classList.remove('hidden');
         // Remove hash from URL
