@@ -26,9 +26,6 @@ const HomeContent = () => {
     <section className="relative overflow-hidden py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div className="flex flex-col gap-8 z-10">
-          <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1 rounded-full w-fit">
-            <span className="text-primary text-xs font-bold tracking-wider uppercase">Future-Proof Engineering</span>
-          </div>
           <h1 className="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight">
             Building Business Infrastructure, <span className="text-primary">Not Just Software.</span>
           </h1>
