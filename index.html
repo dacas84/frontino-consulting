@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
 <html class="dark" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Frontino Tech | High-End Tech</title>
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo6.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/logo6.png">
-<link rel="apple-touch-icon" href="/assets/logo6.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/logo.png">
+<link rel="apple-touch-icon" href="/assets/logo.png">
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
 <!-- React Header Mount Point -->
@@ -15,51 +14,6 @@
 <div id="react-home"></div>
 <!-- React Footer Mount Point -->
 <div id="react-footer"></div>
-<script>
-    // Check if URL contains success parameter
-    window.addEventListener('DOMContentLoaded', function() {
-      const baseUrl = window.location.origin; // Gets current domain automatically
-      document.getElementById('redirectUrl').value = baseUrl + '/#success';
-      if (window.location.hash === '#success') {
-        document.getElementById('successModal').classList.remove('hidden');
-        // Remove hash from URL
-        history.replaceState(null, null, ' ');
-      }
-    });
-  
-    function closeModal() {
-      document.getElementById('successModal').classList.add('hidden');
-    }
-  
-    // Close modal when clicking outside
-    document.getElementById('successModal')?.addEventListener('click', function(e) {
-      if (e.target === this) {
-        closeModal();
-      }
-    });
-  
-    // Close modal with Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        closeModal();
-      }
-    });
-  </script>
 <script type="module" src="./main.jsx"></script>
 </body>
-<!-- Success Modal -->
-<div id="successModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[100] hidden">
-    <div class="bg-background-dark border border-white/10 rounded-2xl p-8 max-w-md mx-4 glass animate-scale">
-      <div class="flex flex-col items-center text-center gap-6">
-        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center">
-          <span class="material-symbols-outlined text-primary text-4xl">check_circle</span>
-        </div>
-        <h3 class="text-2xl font-bold">Thank You!</h3>
-        <p class="text-slate-400">We've received your message and will be in contact with you soon.</p>
-        <button onclick="closeModal()" class="bg-primary hover:bg-primary/90 text-white font-bold rounded-lg px-8 h-12 transition-all w-full">
-          Close
-        </button>
-      </div>
-    </div>
-  </div>
 </html>

@@ -1,6 +1,26 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+import BookingSuccessModal from "./BookingSuccessModal";
 
-const HomeContent = () => (
+const HomeContent = () => {
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const redirectInputRef = useRef(null);
+
+  useEffect(() => {
+    // Set redirect URL for form
+    if (redirectInputRef.current) {
+      redirectInputRef.current.value = `${window.location.origin}/#success`;
+    }
+
+    // Check if returning from successful form submission
+    if (window.location.hash === "#success") {
+      setShowSuccessModal(true);
+      // Clean URL
+      const cleanUrl = window.location.pathname + window.location.search;
+      history.replaceState(null, "", cleanUrl);
+    }
+  }, []);
+
+  return (
   <main className="pt-20">
     {/* Hero Section */}
     <section className="relative overflow-hidden py-24 lg:py-32">
@@ -211,17 +231,22 @@ const HomeContent = () => (
         <div className="p-8 glass border-subtle rounded-2xl">
           <form action="https://formsubmit.co/frontino.investments.llc@gmail.com" method="POST" className="grid sm:grid-cols-3 gap-4">
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" id="redirectUrl" value="" />
+            <input type="hidden" name="_next" ref={redirectInputRef} defaultValue={`${window.location.origin}/#success`} />
             <input type="hidden" name="_template" value="table" />
             <input className="bg-white/5 border-white/10 rounded-lg text-white focus:ring-primary focus:border-primary px-4 h-12" placeholder="Your Name" type="text" name="name" required />
             <input className="bg-white/5 border-white/10 rounded-lg text-white focus:ring-primary focus:border-primary px-4 h-12" placeholder="Business Email" type="email" name="email" required />
-            <textarea className="bg-white/5 border-white/10 rounded-lg text-white focus:ring-primary focus:border-primary px-4 h-24 sm:col-span-3 resize-none" placeholder="Briefly describe what you’re looking for: Web Development, Process Automation, Cloud Systems?" name="message" required></textarea>
+            <textarea className="bg-white/5 border-white/10 rounded-lg text-white focus:ring-primary focus:border-primary px-4 h-24 sm:col-span-3 resize-none" placeholder="Briefly describe what you're looking for: Web Development, Process Automation, Cloud Systems?" name="message" required></textarea>
             <button className="bg-primary hover:bg-primary/90 text-white font-bold rounded-lg h-12 transition-all sm:col-span-3">Book Call</button>
           </form>
         </div>
       </div>
     </section>
+    <BookingSuccessModal
+      isOpen={showSuccessModal}
+      onClose={() => setShowSuccessModal(false)}
+    />
   </main>
-);
+  );
+};
 
 export default HomeContent;
